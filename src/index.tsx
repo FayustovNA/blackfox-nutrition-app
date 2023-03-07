@@ -1,19 +1,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import './index.css';
+import { compose } from 'redux';
+import { applyMiddleware, createStore } from 'redux';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+// import thunk from 'redux-thunk';
+// import reportWebVitals from './reportWebVitals';
+
+// const composeEnhancers =
+//   typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+//     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
+//     : compose;
+
+// const enhancer = composeEnhancers(
+//   applyMiddleware(
+//     thunk
+//   )
+// );
+
+// const store = createStore(rootReducer, enhancer);
+
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+
 root.render(
+  // <Route>
   <React.StrictMode>
-    <App />
+    {/* <Provider store={store}> */}
+    <div className='mainconteiner'>
+      <App />
+    </div>
+    {/* </Provider> */}
   </React.StrictMode>
+  // </Route>
+
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();
