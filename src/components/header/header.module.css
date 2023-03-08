@@ -52,7 +52,7 @@
     color: #A59557;
 }
 
-.linkimg {
-    width: 20px;
-    height: 20px;
+.link:hover * {
+    color: #A59557;
+    fill: #A59557;
 }

@@ -1,0 +1,117 @@
+.cardinfo {
+    max-width: 610px;
+    max-height: 285px;
+    min-height: 280px;
+    background: #1C1C21;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+    margin: 0;
+    position: relative;
+}
+
+.generalinfo {
+    min-width: 360px;
+    min-height: 250px;
+    background: #2D2C32;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.setticon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.setticon:hover {
+    opacity: 0.7;
+}
+
+.title {
+    font-family: 'BlenderPro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 16px;
+    color: #A59557;
+    margin: 0 auto 20px 0;
+    padding: 0;
+    display: flex;
+}
+
+.text {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto 0 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A7A7A7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.value {
+    font-size: 16px;
+    font-family: 'BlenderPro';
+    color: #A59557;
+}
+
+.userinfo {
+    min-width: 170px;
+    max-width: 170px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.username {
+    font-family: 'BlenderPro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #A7A7A7;
+    margin: 0 auto 5px auto;
+    padding: 0;
+    display: flex;
+}
+
+.nick {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #A59557;
+    padding: 0;
+    margin: 0;
+}
+
+.useravatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0 auto 20px auto;
+}
