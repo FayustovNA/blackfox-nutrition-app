@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "./static/css/main.b8193e37.css",
+    "main.js": "./static/js/main.461851fc.js",
+    "static/media/Logo.svg": "./static/media/Logo.acecfd14934a97de8f327487fb75266b.svg",
+    "static/media/BlenderPro-Heavy.woff2": "./static/media/BlenderPro-Heavy.644c3e643b4eed287557.woff2",
+    "static/media/setting.svg": "./static/media/setting.80eeb2b6ae7a665a1106b76e58b8670b.svg",
+    "static/media/progress.svg": "./static/media/progress.6ef73d81276b6ea4d15f0278d8920e03.svg",
+    "static/media/profile.svg": "./static/media/profile.8e1ff723c0a2d377c903a2423a1b2995.svg",
+    "index.html": "./index.html",
+    "main.b8193e37.css.map": "./static/css/main.b8193e37.css.map",
+    "main.461851fc.js.map": "./static/js/main.461851fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8193e37.css",
+    "static/js/main.461851fc.js"
+  ]
+}
