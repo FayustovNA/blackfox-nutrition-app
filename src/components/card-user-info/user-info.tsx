@@ -11,7 +11,9 @@ function UserInfo() {
         <main className={styles.cardinfo}>
             <SetIcon className={styles.setticon} />
             <div className={styles.userinfo}>
-                <img className={styles.useravatar} src={AvatarImg} alt="" />
+                <div className={styles.avatarbox}>
+                    <img className={styles.useravatar} src={AvatarImg} alt="" />
+                </div>
                 <div className={styles.username}>{'Николай Фаюстов'}</div>
                 <div className={styles.nick}>{'@nikolayfayustov'}</div>
             </div>

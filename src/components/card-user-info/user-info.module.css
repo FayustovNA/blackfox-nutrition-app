@@ -1,5 +1,5 @@
 .cardinfo {
-    max-width: 610px;
+    width: 570px;
     max-height: 285px;
     min-height: 280px;
     background: #1C1C21;
@@ -12,17 +12,39 @@
     position: relative;
 }
 
+@media screen and (max-width: 440px) {
+    .cardinfo {
+        width: calc(100% - 2*20px);
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        min-height: 440px;
+        margin: 20px auto;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
 .generalinfo {
-    min-width: 360px;
-    min-height: 250px;
+    min-width: 310px;
     background: #2D2C32;
     border-radius: 15px;
     padding: 20px;
-    margin: 0;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
+}
+
+@media screen and (max-width: 440px) {
+    .generalinfo {
+        width: calc(100% - 2*10px);
+        display: flex;
+        padding: 5px;
+        margin: auto;
+        gap: 10px;
+    }
 }
 
 .setticon {
@@ -48,10 +70,17 @@
     display: flex;
 }
 
+@media screen and (max-width: 440px) {
+    .title {
+        font-size: 16px;
+        margin: 10px auto;
+    }
+}
+
 .text {
     padding: 0;
     width: 100%;
-    margin: 0 auto 0 0;
+    margin: 0 auto 0 auto;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -63,6 +92,15 @@
     justify-content: space-between;
     gap: 20px;
 }
+
+@media screen and (max-width: 440px) {
+    .text {
+        padding: 0;
+        margin: 0 auto 5px;
+        width: 90%;
+    }
+}
+
 
 .value {
     font-size: 16px;
@@ -80,6 +118,14 @@
     padding: 20px;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 440px) {
+    .userinfo {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100px;
+    }
 }
 
 .username {
@@ -108,10 +154,23 @@
     margin: 0;
 }
 
-.useravatar {
+.avatarbox {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0 auto 10px auto;
+}
+
+.useravatar {
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
     padding: 0;
     margin: 0 auto 20px auto;
+    position: absolute;
+    object-fit: cover;
 }

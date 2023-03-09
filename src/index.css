@@ -20,6 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #131316;
 }
 
 code {
@@ -29,6 +30,6 @@ code {
 
 .mainconteiner {
   margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
   background: #131316;
 }
