@@ -1,0 +1,78 @@
+.cardrow {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    width: 100%;
+    background: #1C1C21;
+    border-radius: 25px;
+    position: relative;
+    /* height: 285px; */
+}
+
+@media screen and (max-width: 440px) {
+    .cardrow {
+        width: calc(100% - 2*20px);
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        min-height: 350px;
+        max-height: 440px;
+        margin: 20px auto;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+.cardsgrid {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    /* justify-content: center;
+    align-items: center; */
+    margin: 55px auto 15px auto;
+    overflow: hidden;
+    width: calc(100% - 2*35px);
+    /* overflow: hidden; */
+    gap: 15px;
+}
+
+@media screen and (max-width: 440px) {
+    .cardsgrid {
+        width: calc(100% - 2*10px);
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        margin: 50px auto;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: scroll;
+    }
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    height: 40px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    background: #2D2C32;
+    border-radius: 25px 25px 0px 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A7A7A7;
+    display: flex;
+    align-items: center;
+}
+
+
+.icon {
+    margin: 0 20px 0 30px;
+    width: 20px;
+    height: 20px;
+}

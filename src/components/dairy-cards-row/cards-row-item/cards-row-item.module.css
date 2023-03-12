@@ -1,0 +1,146 @@
+.itembox {
+    width: 380px;
+    height: 90px;
+    background: #2D2C32;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 440px) {
+    .itembox {
+        width: calc(100% - 6px);
+        border-radius: 15px;
+    }
+}
+
+.titlepanel {
+    width: calc(100% - 2*15px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 5px auto;
+    padding: 0;
+}
+
+@media screen and (max-width: 440px) {
+    .titlepanel {
+        margin: 5px auto 5px auto;
+    }
+}
+
+.carddate {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #A7A7A7;
+    padding: 0;
+    width: 50px;
+    /* margin: 10px auto 0 15px;
+    text-align: left; */
+}
+
+.opendiary {
+    font-family: 'Montserrat';
+    font-style: bold;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #1C1C21;
+    background: #8A8A8C;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 3px 10px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 440px) {
+    .opendiary {
+        font-size: 8px;
+    }
+}
+
+.opendiary:hover {
+    background: #C5AD60;
+}
+
+.editdiary {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    display: flex;
+    justify-content: end;
+    height: 20px;
+}
+
+@media screen and (max-width: 440px) {
+    .editdiary {
+        width: 50px;
+    }
+}
+
+.editdiary :hover * {
+    fill: #C5AD60;
+}
+
+.generalinfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 440px) {
+    .generalinfo {
+        margin-bottom: 10px;
+    }
+}
+
+.subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #A59557;
+    margin: 0 auto 5px auto;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 440px) {
+    .subtitle {
+        margin: 0 auto 0px auto;
+    }
+}
+
+
+.value {
+    font-size: 16px;
+    font-family: 'BlenderPro';
+    color: #A59557;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 440px) {
+    .value {
+        margin-bottom: 7px;
+    }
+}
+
+.unit {
+    font-size: 12px;
+}
+
+.centralgrid {
+    border-left: #A59557 solid 1px;
+    border-right: #A59557 solid 1px;
+}

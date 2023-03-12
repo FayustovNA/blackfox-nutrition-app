@@ -1,0 +1,102 @@
+.carddailycomment {
+    width: 570px;
+    /* max-height: 285px; */
+    height: 300px;
+    min-height: 280px;
+    background: #1C1C21;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (max-width: 440px) {
+    .carddailycomment {
+        width: calc(100% - 2*20px);
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        /* min-height: 350px; */
+        margin: 20px auto;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    height: 40px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    background: #2D2C32;
+    border-radius: 25px 25px 0px 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A7A7A7;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin: 0 20px 0 30px;
+    width: 20px;
+    height: 20px;
+}
+
+.message {
+    background: #2D2C32;
+    border-radius: 15px;
+    margin-top: 40px;
+    height: calc(100% - 2*20px);
+    position: relative;
+}
+
+@media screen and (max-width: 440px) {
+    .message {
+        margin: 55px auto 30px auto;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 2*5px);
+        justify-content: center;
+        height: calc(100% - 2*35px);
+    }
+}
+
+.message_box {
+    margin: 10px auto 10px auto;
+    width: 100%;
+    height: calc(100% - 2*10px);
+    flex-direction: column;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    overflow: scroll;
+}
+
+@media screen and (max-width: 440px) {
+    .message_box {
+        display: flex;
+        flex-direction: column;
+        max-height: 450px;
+    }
+}
+
+.message_text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: justify;
+    color: #D7D8DA;
+    margin: 0 20px 0 20px;
+}
