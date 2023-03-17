@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "./static/css/main.a2d05c7a.css",
-    "main.js": "./static/js/main.2145d097.js",
+    "main.css": "./static/css/main.74c1134d.css",
+    "main.js": "./static/js/main.4f8635de.js",
     "static/media/avatar.jpg": "./static/media/avatar.d5acd0719a4f06357155.jpg",
     "static/media/Logo.svg": "./static/media/Logo.acecfd14934a97de8f327487fb75266b.svg",
+    "static/media/Montserrat-Bold.woff2": "./static/media/Montserrat-Bold.cfceaf4e74789fc9df24.woff2",
     "static/media/Montserrat-Medium.woff2": "./static/media/Montserrat-Medium.d6bbb7c3c86aa8edcd0a.woff2",
     "static/media/BlenderPro-Heavy.woff2": "./static/media/BlenderPro-Heavy.644c3e643b4eed287557.woff2",
     "static/media/setting.svg": "./static/media/setting.80eeb2b6ae7a665a1106b76e58b8670b.svg",
@@ -13,15 +14,16 @@
     "static/media/grid.svg": "./static/media/grid.13235552760a24e38882c4ad129c75b4.svg",
     "static/media/plus.svg": "./static/media/plus.be2fe73ac68c254d6e2939458b379d94.svg",
     "static/media/progress.svg": "./static/media/progress.c29c965090b759ce42a59cf569380c6c.svg",
+    "static/media/chart.svg": "./static/media/chart.a3088fdb3b835de5eaba0a785c708840.svg",
     "static/media/right.svg": "./static/media/right.c661b72af6deebae1efc02994977be72.svg",
     "static/media/profile.svg": "./static/media/profile.3d4ab4daa18f6ceaf966ca152280cfe1.svg",
     "static/media/task.svg": "./static/media/task.5ea95679d55e9eab2782e14cff2467e3.svg",
     "index.html": "./index.html",
-    "main.a2d05c7a.css.map": "./static/css/main.a2d05c7a.css.map",
-    "main.2145d097.js.map": "./static/js/main.2145d097.js.map"
+    "main.74c1134d.css.map": "./static/css/main.74c1134d.css.map",
+    "main.4f8635de.js.map": "./static/js/main.4f8635de.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2d05c7a.css",
-    "static/js/main.2145d097.js"
+    "static/css/main.74c1134d.css",
+    "static/js/main.4f8635de.js"
   ]
 }
