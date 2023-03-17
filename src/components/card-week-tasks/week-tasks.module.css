@@ -79,7 +79,7 @@
     height: calc(100% - 2*10px);
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 @media screen and (max-width: 440px) {
@@ -151,4 +151,25 @@
     position: absolute;
     top: 5px;
     left: 15px;
+     background: #C5AD60;
 } */
+
+.message_box::-webkit-scrollbar {
+    width: 3px;
+    background: #8A8A8C;
+    border-radius: 20px;
+}
+
+.message_box::-webkit-scrollbar-thumb {
+    background: #C5AD60;
+    border: 3px solid #C5AD60;
+    border-radius: 20px;
+}
+
+/* ::-webkit-scrollbar-track {
+    width: 10px;
+} */
+
+.message_box::-webkit-scrollbar-button {
+    height: 30%;
+}

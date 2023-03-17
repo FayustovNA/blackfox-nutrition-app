@@ -37,6 +37,11 @@
     gap: 15px;
 }
 
+.cardsgrid::-webkit-scrollbar-button {
+    height: 30%;
+}
+
+
 @media screen and (max-width: 440px) {
     .cardsgrid {
         width: calc(100% - 2*10px);
@@ -49,6 +54,19 @@
         overflow: scroll;
     }
 }
+
+.cardsgrid::-webkit-scrollbar {
+    width: 3px;
+    background: #8A8A8C;
+    border-radius: 20px;
+}
+
+.cardsgrid::-webkit-scrollbar-thumb {
+    background: #C5AD60;
+    border: 3px solid #C5AD60;
+    border-radius: 20px;
+}
+
 
 .title {
     padding: 0;

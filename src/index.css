@@ -12,6 +12,13 @@
   font-weight: 600;
 }
 
+@font-face {
+  src: url(./fonts/Montserrat/Montserrat-Bold.woff2) format('woff2');
+  font-family: 'Montserrat';
+  font-style: bold;
+  font-weight: 700;
+}
+
 
 body {
   margin: 0;

@@ -1,0 +1,110 @@
+.progressitem {
+    width: 590px;
+    height: 388px;
+    background: #2D2C32;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.subtitle {
+    font-family: 'BlenderPro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 16px;
+    color: #A59557;
+    margin: 20px auto 0 20px;
+    padding: 0;
+    display: flex;
+}
+
+.filterpanel {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color: #A7A7A7;
+    display: flex;
+    margin: 5px auto 0 20px;
+    gap: 10px;
+    align-items: center;
+}
+
+.filterbtn {
+    background: #8A8A8C;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: #1C1C21;
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.filterbtn:hover {
+    background: #A59557;
+}
+
+.cardsrow {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0 15px 0 15px;
+}
+
+.card {
+    background: rgba(85, 84, 88, 0.56);
+    border-radius: 5px;
+    padding: 0;
+    margin: 5px auto 0 auto;
+    width: 125px;
+}
+
+.cardtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #C5AD60;
+    text-align: left;
+    margin: 10px auto 0 10px;
+}
+
+.factvalue {
+    font-family: 'BlenderPro';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #C5AD60;
+    margin: 5px auto 5px auto;
+    padding: 0;
+}
+
+.planvalue {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 11px;
+    color: #8A8A8C;
+    width: 100%;
+    border-top: 1px solid #8A8A8C;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.unit {
+    font-size: 10px;
+}
