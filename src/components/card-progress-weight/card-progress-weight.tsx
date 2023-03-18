@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './card-progress-weight.module.css';
+import BasicChart from '../charts/basic-weight-chart';
 
 
 
@@ -28,6 +29,8 @@ function CardProgressWeight() {
                     <div className={styles.value}>{'-3.4'} <span className={styles.unit}>кг</span></div>
                 </div>
             </div>
+
+            <div className={styles.chart}><BasicChart /></div>
         </main >
     );
 }

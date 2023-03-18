@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './card-progress-antropometry.module.css';
+import BasicAnthropometryChart from '../charts/basic-anthropometry-chart';
 
 
 
@@ -27,6 +28,7 @@ function CardProgressAntropometry() {
                     <div className={styles.value}>{'-11'} <span className={styles.unit}>см</span></div>
                 </div>
             </div>
+            <div className={styles.chart}><BasicAnthropometryChart /></div>
         </main >
     );
 }
