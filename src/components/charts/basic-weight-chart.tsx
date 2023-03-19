@@ -91,6 +91,23 @@ function BasicWeightChart() {
                     type: 'solid',
                     color: '#A7A7A7'
                 },
+                labels: {
+                    show: true,
+                    rotate: -45,
+                    rotateAlways: false,
+                    hideOverlappingLabels: true,
+                    showDuplicates: false,
+                    trim: false,
+                    minHeight: undefined,
+                    maxHeight: 100,
+                    style: {
+                        colors: [],
+                        fontSize: '10px',
+                        fontFamily: 'Montserrat',
+                        fontWeight: 400,
+                        cssClass: 'apexcharts-xaxis-label',
+                    }
+                },
 
                 axisBorder: {
                     show: true,
@@ -101,12 +118,22 @@ function BasicWeightChart() {
                     offsetY: 0
                 }
             },
+            yaxis: {
+                labels: {
+                    show: true,
+                    align: 'right',
+                    minWidth: 0,
+                    maxWidth: 160,
+                    style: {
+                        colors: [],
+                        fontSize: '10px',
+                        fontFamily: 'Montserrat',
+                        fontWeight: 400,
+                        cssClass: 'apexcharts-yaxis-label',
+                    }
+                }
+            },
         },
-
-
-
-
-
     };
 
 

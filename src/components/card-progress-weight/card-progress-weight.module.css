@@ -6,6 +6,14 @@
     margin: auto;
 }
 
+@media screen and (max-width: 440px) {
+    .progressitem {
+        width: calc(100% - 6px);
+        border-radius: 15px;
+        height: 350px;
+    }
+}
+
 .subtitle {
     font-family: 'BlenderPro';
     font-style: normal;
@@ -16,6 +24,14 @@
     margin: 20px auto 20px 20px;
     padding: 0;
     display: flex;
+}
+
+@media screen and (max-width: 440px) {
+    .subtitle {
+        font-size: 16px;
+        margin: 10px auto 15px auto;
+        justify-content: center;
+    }
 }
 
 .datarow {
@@ -39,6 +55,12 @@
     margin: 0 auto 5px auto;
 }
 
+@media screen and (max-width: 440px) {
+    .subtitleitem {
+        font-size: 8px;
+    }
+}
+
 .value {
     width: 80%;
     padding: 5px 0 5px 0;
@@ -50,10 +72,28 @@
     color: #A59557;
 }
 
+@media screen and (max-width: 440px) {
+    .value {
+        font-size: 14px;
+    }
+}
+
 .unit {
     font-size: 14px;
 }
 
+@media screen and (max-width: 440px) {
+    .unit {
+        font-size: 9px;
+    }
+}
+
 .chart {
     margin: 10px auto 10px 20px;
+}
+
+@media screen and (max-width: 440px) {
+    .chart {
+        margin: 10px auto 10px auto;
+    }
 }

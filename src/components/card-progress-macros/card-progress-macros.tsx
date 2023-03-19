@@ -12,9 +12,11 @@ function CardProgressMacros() {
             <h3 className={styles.subtitle}>БАЗОВАЯ АНАЛИТИКА РАЦИОНА</h3>
             <div className={styles.filterpanel}>
                 <p className={styles.paneltitle}>Сопоставление фактических и плановых норм</p>
-                <button className={styles.filterbtn}>Неделя</button>
-                <button className={styles.filterbtn}>Месяц</button>
-                <button className={styles.filterbtn}>Год</button>
+                <div className={styles.btns}>
+                    <button className={styles.filterbtn}>Неделя</button>
+                    <button className={styles.filterbtn}>Месяц</button>
+                    <button className={styles.filterbtn}>Год</button>
+                </div>
             </div>
 
             <div className={styles.cardsrow}>

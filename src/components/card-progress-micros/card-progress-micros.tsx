@@ -11,9 +11,11 @@ function CardProgressMicros() {
             <h3 className={styles.subtitle}>ДЕТАЛЬНАЯ АНАЛИТИКА РАЦИОНА</h3>
             <div className={styles.filterpanel}>
                 <p className={styles.paneltitle}>Сопоставление фактических и плановых норм</p>
-                <button className={styles.filterbtn}>День</button>
-                <button className={styles.filterbtn}>Неделя</button>
-                <button className={styles.filterbtn}>Месяц</button>
+                <div className={styles.btns}>
+                    <button className={styles.filterbtn}>День</button>
+                    <button className={styles.filterbtn}>Неделя</button>
+                    <button className={styles.filterbtn}>Месяц</button>
+                </div>
             </div>
             <div className={styles.cardsrow}>
             </div>

@@ -6,6 +6,13 @@
     margin: auto;
 }
 
+@media screen and (max-width: 440px) {
+    .progressitem {
+        width: calc(100% - 6px);
+        border-radius: 15px;
+    }
+}
+
 .subtitle {
     font-family: 'BlenderPro';
     font-style: normal;
@@ -16,6 +23,14 @@
     margin: 20px auto 0 20px;
     padding: 0;
     display: flex;
+}
+
+@media screen and (max-width: 440px) {
+    .subtitle {
+        font-size: 16px;
+        margin: 10px auto 5px auto;
+        justify-content: center;
+    }
 }
 
 .filterpanel {
@@ -29,6 +44,40 @@
     margin: 5px auto 0 20px;
     gap: 10px;
     align-items: center;
+}
+
+@media screen and (max-width: 440px) {
+    .filterpanel {
+        font-size: 10px;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0 auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .paneltitle {
+        padding: 0;
+        margin: 10px auto 5px auto;
+    }
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 440px) {
+    .btns {
+        width: calc(100% - 50px);
+        display: flex;
+        flex-direction: row;
+        margin: 0px auto 5px auto;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 .filterbtn {

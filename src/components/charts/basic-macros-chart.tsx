@@ -16,7 +16,7 @@ function BasicMacrosChart() {
             },
             {
                 name: "Калории план",
-                type: 'area',
+                type: 'line',
                 data: [1750, 1750, 1750, 1750, 1750]
             }
         ],
@@ -63,7 +63,7 @@ function BasicMacrosChart() {
             fill: {
                 colors: undefined,
                 opacity: 0.3,
-                type: 'solid',
+                // type: 'solid',
             },
 
             markers: {
@@ -146,11 +146,6 @@ function BasicMacrosChart() {
             },
 
         },
-
-
-
-
-
     };
 
 

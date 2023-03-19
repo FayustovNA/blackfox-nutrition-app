@@ -32,6 +32,12 @@
     flex-direction: row;
 }
 
+@media screen and (max-width: 440px) {
+    .progressbox {
+        width: calc(100% - 2*20px);
+    }
+}
+
 .title {
     padding: 0;
     margin: 0;
@@ -71,13 +77,17 @@
     grid-template-rows: repeat(2, 1fr);
 }
 
-.progressitem {
-    width: 590px;
-    height: 388px;
-    background: #2D2C32;
-    border-radius: 20px;
-    margin: auto;
+@media screen and (max-width: 440px) {
+    .progressgrid {
+        width: calc(100% - 2*10px);
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        margin: 50px auto;
+        align-items: center;
+    }
 }
+
 
 .subtitle {
     font-family: 'BlenderPro';
