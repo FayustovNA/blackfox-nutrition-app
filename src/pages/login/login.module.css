@@ -1,0 +1,120 @@
+.loginpage {
+    text-align: center;
+    max-width: 2000px;
+    height: 100%;
+    width: 100%;
+    /* min-height: 1080px; */
+    padding: 0;
+    margin: 80px auto 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: 'BlenderPro';
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8A8A8C;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 auto 10px auto;
+    padding: 0;
+}
+
+.form {
+    max-width: 500px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    flex-direction: column;
+    background: #1C1C21;
+    border-radius: 20px;
+}
+
+.input {
+    width: 300px;
+    font-family: 'BlenderPro';
+    height: 30px;
+    background-color: #3e3e3f;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    padding-left: 14px;
+    color: #A59557;
+}
+
+
+.input::placeholder {
+    color: #A59557;
+    font-size: 10px;
+}
+
+/* .input:required {
+    background-color: #3e3e3f;
+    border: none;
+    outline: none;
+    color: #A59557;
+} */
+
+.input:focus {
+    background-color: #3e3e3f;
+    outline: none;
+    border: 0.5px solid #A59557;
+}
+
+
+.btn {
+    width: 170px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background: #A59557;
+    font-family: 'BlenderPro';
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.text {
+    color: #8A8A8C;
+    font-family: 'BlenderPro';
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    font-size: 12px;
+    margin: 8px auto 0 auto;
+}
+
+.link {
+    text-decoration: none;
+    margin: 0 auto 0 10px;
+    color: #A59557;
+}

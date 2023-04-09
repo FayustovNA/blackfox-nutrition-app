@@ -79,6 +79,31 @@
     align-items: center;
 }
 
+.link_active {
+    font-family: 'BlenderPro';
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 19px;
+    color: #A59557;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_active * {
+    color: #A59557;
+    fill: #A59557;
+    font-family: 'BlenderPro';
+    text-decoration: none;
+}
+
 @media screen and (max-width: 440px) {
     .link {
         font-size: 14px;
