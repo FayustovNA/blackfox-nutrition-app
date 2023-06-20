@@ -3,10 +3,11 @@
   max-width: 2000px;
   width: 100%;
   background: #131316;
-  min-height: 1080px;
+  /* min-height: 1080px; */
   padding: 0;
   margin: 0 auto 0;
   justify-content: center;
+  position: relative;
 }
 
 @media screen and (max-width: 400px) {

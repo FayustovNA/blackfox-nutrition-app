@@ -15,8 +15,8 @@ function AppHeader() {
         <header className={styles.header}>
             <nav className={styles.navigation}>
                 <NavLink to='progress' className={({ isActive }) => isActive ? styles.link_active : styles.link}><Progress className={styles.linkimg} />ПРОГРЕСС </NavLink>
-                <img src={Logo} className={styles.logo}></img>
-                <NavLink to='/' className={({ isActive }) => isActive ? styles.link_active : styles.link}><Profile className={styles.linkimg} />ПРОФИЛЬ</NavLink>
+                <NavLink to='/'>  <img src={Logo} className={styles.logo}></img> </NavLink>
+                <NavLink to='profile' className={({ isActive }) => isActive ? styles.link_active : styles.link}><Profile className={styles.linkimg} />ПРОФИЛЬ</NavLink>
             </nav>
         </header >
     );
