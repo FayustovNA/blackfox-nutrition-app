@@ -1,7 +1,8 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-import { TUserRegister } from '../../hooks/useForm'
-import { registerUserRequestApi } from '../../api'
-import { setCookie } from '../../utils/utils'
+import {createAsyncThunk, createSlice} from '@reduxjs/toolkit'
+import {TUserRegister} from '../../hooks/useForm'
+import {registerUserRequestApi} from '../../api'
+import {setCookie} from '../../utils/utils'
+import {setUserData} from './userSlice'
 
 export type TRegisterState = {
   registerRequest: boolean
@@ -17,32 +18,27 @@ export const initialState: TRegisterState = {
 
 export type TRegisterUserResponse = {
   id: number
-  email: string
-  firstName: string
-  lastName: string
   username: string
+  email: string
   password: string
-  organization: string
-  access: string
-  refresh: string
+  confirmPassword: string
 }
 
 export const registerUser = createAsyncThunk(
   'registration/register',
   async (
-    { firstName, lastName, email, password, organization }: TUserRegister,
-    { dispatch, rejectWithValue }
+    {username, email, password, confirmPassword}: TUserRegister,
+    {dispatch, rejectWithValue}
   ) => {
     try {
       const response = registerUserRequestApi({
-        firstName,
-        lastName,
+        username,
         email,
         password,
-        organization,
+        confirmPassword,
       })
       console.log(response)
-      //   dispatch(setUserData(response))
+      dispatch(setUserData(response))
     } catch (error) {
       //   dispatch(setError(CODES.SERVER_ERR))
       return rejectWithValue(error)

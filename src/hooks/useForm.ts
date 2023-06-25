@@ -1,11 +1,10 @@
-import React, { ChangeEvent, useState } from 'react'
+import {ChangeEvent, useState} from 'react'
 
 export type TUserRegister = {
-  firstName?: string
-  lastName?: string
+  username: string
   email: string
   password: string
-  organization?: string
+  confirmPassword: string
 }
 
 const useForm = (inputValues: TUserRegister) => {
@@ -14,11 +13,11 @@ const useForm = (inputValues: TUserRegister) => {
   const handleChange = (
     event: ChangeEvent<HTMLSelectElement | HTMLInputElement>
   ) => {
-    const { value, name } = event.target
-    setValues({ ...values, [name]: value })
+    const {value, name} = event.target
+    setValues({...values, [name]: value})
   }
 
-  return { values, handleChange, setValues }
+  return {values, handleChange, setValues}
 }
 
 export default useForm
