@@ -20,11 +20,11 @@ function App() {
       <Routes>
         < Route path='/' element={<MainPage />} />
         < Route path='/profile' element={<MainProfilePage />} />
-        < Route path='progress' element={<MainProgressPage />} />
-        < Route path='registration' element={<Registration />} />
-        < Route path='login' element={<LogIn />} />
-        < Route path='forgot-password' element={<ForgotPassword />} />
-        < Route path='reset-password' element={<ResetPassword />} />
+        < Route path='/progress' element={<MainProgressPage />} />
+        < Route path='/registration' element={<Registration />} />
+        < Route path='/login' element={<LogIn />} />
+        < Route path='/forgot-password' element={<ForgotPassword />} />
+        < Route path='/reset-password' element={<ResetPassword />} />
       </Routes>
       <AppFooter />
     </div>

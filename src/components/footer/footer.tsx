@@ -6,13 +6,14 @@ import { NavLink, useMatch, Link } from 'react-router-dom';
 
 function AppFooter() {
 
+    const isMain = useMatch({ path: '/' })
 
 
     return (
         <footer className={styles.footer}>
             <nav className={styles.navigation}>
                 <ul className={styles.links}>
-                    <p className={styles.title}>Что-то о нас</p>
+                    <p className={styles.title}>Контакты</p>
                     <li className={styles.link}>blackfoxnutrition@gmail.com</li>
                 </ul>
                 <ul className={styles.links}>

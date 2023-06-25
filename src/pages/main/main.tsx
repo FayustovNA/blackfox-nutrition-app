@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
-import LogIn from '../../images/br-go.png';
-import RegIn from '../../images/br-reg.png';
+import LogIn from '../../images/LogIn.png';
+import RegIn from '../../images/Registr.png';
 
 
 const MainPage = () => {
@@ -31,7 +31,7 @@ const MainPage = () => {
                 </div>
 
                 <div className={styles.box}>
-                    <img src={LogIn} className={styles.img}></img>
+                    <img src={LogIn} className={styles.img2}></img>
                     <NavLink to='login'>
                         <button type='submit' className={styles.btn}>
                             ВОЙТИ В ПРОФИЛЬ
