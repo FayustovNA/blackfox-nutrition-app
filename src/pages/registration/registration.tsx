@@ -1,13 +1,13 @@
-import React, {FormEvent} from 'react'
+import React, { FormEvent } from 'react'
 import styles from './registration.module.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import useForm from '../../hooks/useForm'
-import {useNavigate} from 'react-router-dom'
-import {useDispatch} from '../../services/hooks'
-import {registerUser} from '../../services/slices/registerSlice'
+import { useNavigate } from 'react-router-dom'
+import { useDispatch } from '../../services/hooks'
+import { registerUser } from '../../services/slices/registerSlice'
 
 const Registration = () => {
-  const {values, handleChange, setValues} = useForm({
+  const { values, handleChange, setValues } = useForm({
     username: '',
     email: '',
     password: '',
@@ -44,7 +44,7 @@ const Registration = () => {
       <form className={styles.form} onSubmit={handleSubmit}>
         <input
           className={styles.input}
-          placeholder='Николай Фаюстов'
+          placeholder='Имя Фамилия'
           name='username'
           value={values.username}
           onChange={handleChange}
