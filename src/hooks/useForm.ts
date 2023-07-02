@@ -1,13 +1,13 @@
 import {ChangeEvent, useState} from 'react'
 
-export type TUserRegister = {
-  username: string
+export type TState = {
+  username?: string
   email: string
   password: string
-  confirmPassword: string
+  confirmPassword?: string
 }
 
-const useForm = (inputValues: TUserRegister) => {
+const useForm = (inputValues: TState) => {
   const [values, setValues] = useState(inputValues)
 
   const handleChange = (
