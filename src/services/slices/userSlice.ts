@@ -1,4 +1,4 @@
-import {createSlice} from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 
 export type TGetUserInfo = {
   id: number
@@ -49,4 +49,4 @@ export const userSlice = createSlice({
 })
 
 export default userSlice.reducer
-export const {setUserData, logoutUser} = userSlice.actions
+export const { setUserData, logoutUser } = userSlice.actions

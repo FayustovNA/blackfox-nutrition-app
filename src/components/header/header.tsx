@@ -9,16 +9,16 @@ import { NavLink, useMatch, Link } from 'react-router-dom';
 
 function AppHeader() {
 
-    const isMain = useMatch({ path: '/' })
-    console.log(isMain)
+    const isProfile = useMatch({ path: '/profile' })
+    const isProgress = useMatch({ path: '/progress' })
 
 
     return (
         <header className={styles.header}>
             <nav className={styles.navigation}>
-                {isMain ? null : <NavLink to='progress' className={({ isActive }) => isActive ? styles.link_active : styles.link}><Progress className={styles.linkimg} />ПРОГРЕСС </NavLink>}
+                {isProfile || isProgress ? <NavLink to='progress' className={({ isActive }) => isActive ? styles.link_active : styles.link}><Progress className={styles.linkimg} />ПРОГРЕСС </NavLink> : null}
                 <NavLink to='/'>  <img src={Logo} className={styles.logo}></img> </NavLink>
-                {isMain ? null : <NavLink to='profile' className={({ isActive }) => isActive ? styles.link_active : styles.link}><Profile className={styles.linkimg} />ПРОФИЛЬ</NavLink>}
+                {isProfile || isProgress ? <NavLink to='profile' className={({ isActive }) => isActive ? styles.link_active : styles.link}><Profile className={styles.linkimg} />ПРОФИЛЬ</NavLink> : null}
             </nav>
         </header >
     );

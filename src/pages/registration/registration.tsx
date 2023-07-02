@@ -1,10 +1,10 @@
-import React, {FormEvent} from 'react'
+import React, { FormEvent } from 'react'
 import styles from './registration.module.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import useForm from '../../hooks/useForm'
-import {useNavigate} from 'react-router-dom'
-import {useDispatch} from '../../services/hooks'
-import {registerUser} from '../../services/slices/registerSlice'
+import { useNavigate } from 'react-router-dom'
+import { useDispatch } from '../../services/hooks'
+import { registerUser } from '../../services/slices/registerSlice'
 
 const Registration = () => {
   const {values, handleChange} = useForm({

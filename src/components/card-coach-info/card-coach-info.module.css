@@ -1,0 +1,104 @@
+.cardinfo {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: auto;
+}
+
+@media screen and (max-width: 440px) {
+    .cardinfo {
+        width: calc(100% - 2*20px);
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        min-height: 440px;
+        margin: 20px auto;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+.title {
+    font-family: 'BlenderPro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 16px;
+    color: #A59557;
+    margin: 0 auto 20px 0;
+    padding: 0;
+    display: flex;
+}
+
+@media screen and (max-width: 440px) {
+    .title {
+        font-size: 16px;
+        margin: 10px auto;
+    }
+}
+
+
+.userinfo {
+    min-width: 170px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 440px) {
+    .userinfo {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100px;
+    }
+}
+
+.username {
+    font-family: 'BlenderPro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 16px;
+    color: #A7A7A7;
+    margin: 0 auto 10px auto;
+    padding: 0;
+    display: flex;
+}
+
+.nick {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #A59557;
+    padding: 0;
+    margin: 0;
+}
+
+.avatarbox {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0 auto 10px auto;
+}
+
+.useravatar {
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0 auto 20px auto;
+    position: absolute;
+    object-fit: cover;
+}

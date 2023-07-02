@@ -76,4 +76,25 @@ export const data = [
         calories: 1350,
         weight: 77,
     },
+    {
+        date: '01.02.2023',
+        link: 'https://health-diet.ru/diary/share/719404640caca010cd2',
+        proteins: 130,
+        calories: 1350,
+        weight: 77,
+    },
+    {
+        date: '01.02.2023',
+        link: 'https://health-diet.ru/diary/share/719404640caca010cd2',
+        proteins: 130,
+        calories: 1350,
+        weight: 77,
+    },
+    {
+        date: '01.02.2023',
+        link: 'https://health-diet.ru/diary/share/719404640caca010cd2',
+        proteins: 130,
+        calories: 1350,
+        weight: 77,
+    },
 ]
