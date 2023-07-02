@@ -1,6 +1,7 @@
 import {TRegisterUserResponse} from '../services/slices/registerSlice'
 import {getCookie} from '../utils/utils'
-import {TUserRegister} from '../hooks/useForm'
+import {TUserRegister} from '../services/slices/registerSlice'
+import {TLoginProfile} from '../services/slices/registerSlice'
 
 export const API_URL: string = `http://84.252.128.100/api`
 
@@ -36,6 +37,19 @@ export const registerUserRequestApi = ({
       email: email,
       password: password,
       confirm_password: confirmPassword,
+    }),
+  })
+}
+
+export const loginUserRequestApi = ({email, password}: TLoginProfile) => {
+  return apiRequest<TRegisterUserResponse>(`${API_URL}/login/`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json;charger=utf-8',
+    },
+    body: JSON.stringify({
+      email,
+      password,
     }),
   })
 }

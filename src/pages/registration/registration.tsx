@@ -7,7 +7,7 @@ import { useDispatch } from '../../services/hooks'
 import { registerUser } from '../../services/slices/registerSlice'
 
 const Registration = () => {
-  const { values, handleChange, setValues } = useForm({
+  const {values, handleChange} = useForm({
     username: '',
     email: '',
     password: '',
@@ -44,7 +44,7 @@ const Registration = () => {
       <form className={styles.form} onSubmit={handleSubmit}>
         <input
           className={styles.input}
-          placeholder='Имя Фамилия'
+          placeholder='Имя пользователя'
           name='username'
           value={values.username}
           onChange={handleChange}
