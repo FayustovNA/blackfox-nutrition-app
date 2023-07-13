@@ -1,12 +1,12 @@
-import React, {FormEvent} from 'react'
+import React, { FormEvent } from 'react'
 import styles from './login.module.css'
 import useForm from '../../hooks/useForm'
-import {Link} from 'react-router-dom'
-import {useDispatch} from '../../services/hooks'
-import {loginUser} from '../../services/slices/loginSlice'
+import { Link } from 'react-router-dom'
+import { useDispatch } from '../../services/hooks'
+import { loginUser } from '../../services/slices/userSlice'
 
 const LogIn = () => {
-  const {values, handleChange} = useForm({
+  const { values, handleChange } = useForm({
     email: '',
     password: '',
   })

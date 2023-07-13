@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './card-progress-micros.module.css';
-
+import MarkersChart from '../charts/bar-with-markers';
 
 
 
@@ -17,7 +17,8 @@ function CardProgressMicros() {
                     <button className={styles.filterbtn}>Месяц</button>
                 </div>
             </div>
-            <div className={styles.cardsrow}>
+            <div className={styles.chartbox}>
+                <MarkersChart />
             </div>
         </main >
     );

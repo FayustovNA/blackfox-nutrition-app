@@ -45,8 +45,15 @@ export const userSlice = createSlice({
         loginError: false,
       })
     },
+    loginUser: (state, action) => {
+      Object.assign(state, {
+        username: action.payload.username,
+        email: action.payload.email,
+        isLoggedIn: true,
+      })
+    },
   },
 })
 
 export default userSlice.reducer
-export const { setUserData, logoutUser } = userSlice.actions
+export const { setUserData, logoutUser, loginUser } = userSlice.actions

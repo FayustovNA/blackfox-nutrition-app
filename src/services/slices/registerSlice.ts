@@ -1,6 +1,6 @@
-import {createAsyncThunk, createSlice} from '@reduxjs/toolkit'
-import {registerUserRequestApi} from '../../api'
-import {setUserData} from './userSlice'
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
+import { registerUserRequestApi } from '../../api'
+import { setUserData } from './userSlice'
 
 export type TRegisterState = {
   registerRequest: boolean
@@ -34,8 +34,8 @@ export type TLoginProfile = Pick<TUserRegister, 'email' | 'password'>
 export const registerUser = createAsyncThunk(
   'registration/register',
   async (
-    {username, email, password, confirmPassword}: TUserRegister,
-    {dispatch, rejectWithValue}
+    { username, email, password, confirmPassword }: TUserRegister,
+    { dispatch, rejectWithValue }
   ) => {
     try {
       const response = await registerUserRequestApi({
